@@ -40,11 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #my Apps
+    'users',
 
     #Third Party Apps
     'rest_framework',
     'drf_yasg',
     # 'debug_toolbar',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
 ]
 
 MIDDLEWARE = [
@@ -186,3 +189,9 @@ LOGGING = {
     },
 }
 # handlers iki farklı handler işlemi yapan loji kuran 
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
