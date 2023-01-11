@@ -62,7 +62,4 @@ class StaffFlightSerializer(serializers.ModelSerializer):
             "etd",
             "reservation",
         )
-        
-        
-    
-    
+
